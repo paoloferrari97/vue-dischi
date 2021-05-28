@@ -10,7 +10,12 @@
 <body>
     
     <div id="app">
-        
+        <div v-for="disco in dischi">
+            <img :src="disco.poster" alt="">
+            {{disco.title}}
+            {{disco.author}}
+            {{disco.year}}
+        </div>
     </div>
 
     <!-- VueJS -->
