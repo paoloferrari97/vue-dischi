@@ -6,6 +6,7 @@
 
 body {
   background-color: #1e2d3b;
+  font-family: "Raleway", sans-serif;
 }
 
 header {
@@ -28,6 +29,7 @@ header > i {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding-bottom: 100px;
 }
 
 .card {
@@ -36,7 +38,7 @@ header > i {
   align-items: center;
   background-color: #2e3a46;
   width: 200px;
-  height: 350px;
+  height: 400px;
   margin: 10px 20px;
   padding: 20px;
 }
