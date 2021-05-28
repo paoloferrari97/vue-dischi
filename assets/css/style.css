@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  background-color: #1e2d3b;
+}
+
 header {
   background-color: #2e3a46;
   height: 60px;
@@ -20,11 +24,10 @@ header > i {
 }
 
 .container {
-  background-color: #1e2d3b;
   padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card {
@@ -34,11 +37,12 @@ header > i {
   background-color: #2e3a46;
   width: 200px;
   height: 350px;
+  margin: 10px 20px;
+  padding: 20px;
 }
 
 .card > img {
-  width: 80%;
-  margin-top: 20px;
+  max-width: 100%;
 }
 
 .titolo {
