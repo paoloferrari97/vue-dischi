@@ -24,8 +24,18 @@ header > i {
   border-radius: 50%;
 }
 
+#seleziona {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seleziona > label {
+  color: white;
+}
+
 .container {
-  padding-top: 100px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
