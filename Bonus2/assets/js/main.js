@@ -12,7 +12,8 @@ const app = new Vue({
     el: "#app",
     data: {
         url: "https://flynn.boolean.careers/exercises/api/array/music",
-        dischi:[]
+        dischi:[],
+        genere: "Tutti"
     },
     methods: {
         
@@ -24,6 +25,9 @@ const app = new Vue({
             //console.log(resp);    
             //console.log(resp.data.response);
             this.dischi = resp.data.response;
+
+            this.dischi = this.dischi.sort((a, b) => parseFloat(a.year) - parseFloat(b.year));
+
         })
         .catch(e => {
             console.log(e);
