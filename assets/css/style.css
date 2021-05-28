@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #2e3a46;
+  height: 60px;
+  display: flex;
+  align-items: center;
+}
+
+header > i {
+  font-size: 45px;
+  margin-left: 20px;
+  color: #1ed760;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.container {
+  background-color: #1e2d3b;
+  padding-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2e3a46;
+  width: 200px;
+  height: 350px;
+}
+
+.card > img {
+  width: 80%;
+  margin-top: 20px;
+}
+
+.titolo {
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.scritte {
+  color: #7b8080;
+  text-align: center;
+}
