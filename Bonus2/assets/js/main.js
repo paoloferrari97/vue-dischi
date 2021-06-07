@@ -13,7 +13,8 @@ const app = new Vue({
     data: {
         url: "https://flynn.boolean.careers/exercises/api/array/music",
         dischi:[],
-        genere: "Tutti"
+        genere: "Tutti",
+        error: null
     },
     methods: {
         
@@ -31,6 +32,7 @@ const app = new Vue({
         })
         .catch(e => {
             console.log(e);
+            this.error = e;
         })
     }
 });

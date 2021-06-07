@@ -33,6 +33,13 @@
 
         <div class="container">
 
+            <div class="card" v-if="error != null">
+                <img src="https://maurizioreale.it/wp-content/uploads/2016/01/errore.png" alt="">
+                <h2 class="titolo">C'è stato un errore!</h2>
+                <span class="scritte">L'errore riconosciuto è:</span>
+                <span class="scritte">{{error}}</span>
+            </div>
+
             <div class="card" v-for="disco in dischi" v-if="disco.genre == genere || genere == 'Tutti'">
                 <img :src="disco.poster" alt="">
                 <h2 class="titolo">{{disco.title.toUpperCase()}}</h2>
